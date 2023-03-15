@@ -1,0 +1,170 @@
+html,
+body {
+  background-color: #faf8f6;
+}
+
+%title-section {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 2.1875rem;
+  font-weight: 600;
+  letter-spacing: -0.0144rem;
+  line-height: 1.49;
+}
+
+%title-large {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 300;
+  letter-spacing: -0.0156rem;
+  line-height: 1.47;
+}
+
+%title-small {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.0169rem;
+  line-height: 1.4;
+}
+
+%title-poi {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.67;
+  letter-spacing: 0.0625rem;
+}
+
+%text-body-default {
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  %title-attention {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  %title-section {
+    font-size: 2.1875rem;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: -0.0187rem;
+  }
+
+  %title-large {
+    font-size: 1.875rem;
+    line-height: 1.47;
+    font-weight: 300;
+    letter-spacing: -0.0187rem;
+  }
+
+  %title-small {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: -0.0187rem;
+  }
+
+  %title-poi {
+    font-size: 1rem;
+    line-height: 1.625;
+    font-weight: 700;
+    letter-spacing: 0.0625rem;
+  }
+
+  %text-body-default {
+    font-size: 1.0625rem;
+    line-height: 1.77;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  %title-attention {
+    font-size: 3.125rem;
+    line-height: 1.3;
+    letter-spacing: 0.0625rem;
+  }
+
+  %title-section {
+    font-size: 2.8125rem;
+    letter-spacing: -0.0187rem;
+    line-height: 1.42;
+  }
+
+  %title-large {
+    font-size: 2.125rem;
+    letter-spacing: -0.0187rem;
+    line-height: 1.4;
+  }
+
+  %title-small {
+    font-size: 1.375rem;
+    letter-spacing: -0.0187rem;
+    line-height: 1.45;
+  }
+
+  %text-display {
+    font-size: 1.75rem;
+    line-height: 1.75;
+  }
+
+  %text-body-default {
+    font-size: 1.125rem;
+    line-height: 1.78;
+  }
+}
+
+h1.title-attention,
+h2.title-attention {
+  @extend %title-attention;
+}
+
+h1 {
+  @extend %title-section;
+}
+
+h2 {
+  @extend %title-large;
+}
+
+h3 {
+  @extend %title-small;
+}
+
+h4 {
+  @extend %title-poi;
+}
+
+h5 {
+  @extend %title-poi;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+
+  @extend %text-body-default;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-link);
+
+  &:hover {
+    color: var(--color-text-link-hover);
+  }
+
+  &:focus {
+    color: var(--color-text-link-focus);
+  }
+}

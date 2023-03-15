@@ -1,0 +1,16 @@
+footer {
+  background-color: #eaedf2;
+  padding: 2.5rem 0;
+}
+
+.footer {
+  &__tagline {
+    color: var(--color-ui-03);
+  }
+  &__copyright {
+    padding-top: 1.25rem;
+    margin-top: 1.25rem;
+    border-top: 1px solid var(--color-border-01);
+    color: var(--color-ui-03);
+  }
+}

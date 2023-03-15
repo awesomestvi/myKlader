@@ -1,0 +1,53 @@
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > button {
+    border: 0;
+    background: none;
+    text-transform: uppercase;
+    padding: 0;
+    border-bottom: 0.125rem solid transparent;
+
+    &:not(:disabled) {
+      &:hover {
+        border-bottom: 0.125rem solid var(--primary-color-high-contrast);
+      }
+    }
+  }
+
+  & > button {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.0187rem;
+    color: var(--color-ui-02);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.625rem;
+    text-align: center;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  & > button:disabled {
+    color: #9b9b9b;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pagination {
+    & > button {
+      margin: 0;
+      padding: 0.625rem 0;
+      min-width: 2rem;
+      min-height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/* Style imports according to ITCSS */
+
+/* Settings layer */
+@import "./settings/fonts", "./settings/variables";
+
+/* Generic layer */
+@import "./generic/generic";
+
+/* Elements layer */
+@import "./elements/elements";
+
+/* Objects layer */
+@import "./objects/layout";
+
+/* Components layer */
+@import "./components/grid", "./components/header", "./components/footer",
+  "./components/pagination", "./components/product-card";

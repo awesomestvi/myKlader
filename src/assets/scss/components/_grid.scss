@@ -1,0 +1,11 @@
+.container-fluid,
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container {
+  width: var(--container-width);
+}

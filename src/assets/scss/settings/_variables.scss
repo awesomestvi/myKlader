@@ -1,0 +1,49 @@
+:root {
+  /* UI colors */
+  --color-ui-00: #000;
+  --color-ui-01: #fff;
+  --color-ui-02: #333;
+  --color-ui-03: #666;
+  --color-ui-04: #d9000c;
+
+  /* Text colors */
+  --color-text-link: #333;
+
+  /* Border colors */
+  --color-border-01: #e5e5e5;
+  --color-border-02: #ccc;
+
+  /* Link state colors */
+  --color-text-link-hover: #838383;
+  --color-text-link-visited: #838383;
+  --color-text-link-active: #838383;
+  --color-text-link-focus: #838383;
+
+  /* Widths & paddings */
+  --container-width: 100%;
+  --container-padding: 30px;
+
+  /* Font settings */
+  --font-size-default: 1rem; /* 16px */
+  --letter-spacing-default: 0.0125rem; /* 0.2px */
+  --line-height-default: 1.75; /* 28px */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Small mode only */
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1359px) {
+  /* Medium mode only */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Medium mode and up */
+}
+
+@media only screen and (min-width: 1360px) {
+  /* Large mode and up */
+  :root {
+    --container-width: 1300px;
+  }
+}
